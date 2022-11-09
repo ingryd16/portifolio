@@ -43,24 +43,24 @@
         flex-direction: column;
         height: auto;
         gap: 48px;
-        background-color: aqua;
         padding: 0px;
     }
     .contato-item__icon {
-        background-color: crimson;
         font-size: 15px;
     }
     .contato-container {
         display: flex;
         align-items: center;
-        background-color: blueviolet;
+        transform: translate(0%, -30%);
+    }
+    .social-container {
+        transform: translate(0%, -10%);
+        display: flex;
+        flex-direction: column;
     }
     .links-container {
         display: flex;
         align-items: center;
-        background-color: cornflowerblue;
-    }
-    {
-        background-color: darkblue;
+        transform: translate(0%, -35%);
     }
 }
