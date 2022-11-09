@@ -12,3 +12,8 @@
 .menu li:hover {
     border-bottom: 4px solid var(--primary-color);
 }
+
+.menu-3-barras {
+    display: none;
+    cursor: pointer;
+}

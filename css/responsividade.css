@@ -63,4 +63,7 @@
         align-items: center;
         transform: translate(0%, -35%);
     }
+    .menu-3-barras {
+        display: inline-block;
+    }
 }
