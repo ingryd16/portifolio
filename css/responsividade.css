@@ -72,6 +72,21 @@
     header {
         width: 80%;
     }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .logo::before {
+        content: "<";
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+    .logo::after {
+        content: "/>";
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
     .menu {
         display: none;
     }
@@ -79,12 +94,13 @@
         display: flex;
         flex-direction: column;
         font-size: 1rem;
+        transform: translateY(10%);
     }
     .profile__text {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     .profile__name {
-        font-size: 2.4rem;
+        font-size: 1.5rem;
     }
     .sobre-mim {
         width: 80%;
@@ -92,41 +108,49 @@
         grid-template-areas: "title" "description" "skills";
         grid-template-rows: none;
         grid-template-columns: 1fr;
-        gap: 64px;
     }
     .section-title {
-        font-size: 80px;
+        font-size: 3rem;
+    }
+    h2.section-title {
+        transform: translateY(60%);
     }
     .description {
-        transform: translateY(-15%);
+        transform: translateY(5%);
+        transform: translateX(-4%);
     }
     .description__title {
         align-self: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         transform: translate(8%);
     }
     .description__text {
-        align-self: center;
-        transform: translateX(8%);
-    }
-    .skills {
-        transform: translateY(-5%);
+        font-size: 1.25rem;
+        transform: translateY(-10%);
+        text-align: center;
+        align-items: center;
+        transform: translate(15%);
     }
     .skills__title {
         align-self: center;
-        font-size: 2rem;
-        transform: translateX(70%);
+        font-size: 1.5rem;
+        transform: translateX(50%);
     }
     .skills__icons {
         width: 70%;
-        align-self: center;
         transform: translateX(45%);
-        flex-wrap: wrap;
     }
     .skills {
         width: 80%;
         display: flex;
         flex-direction: column;
+    }
+    .projetos {
+        height: auto;
+        gap: 30px;
+    }
+    .contato .section-title {
+        transform: translateY(-10%);
     }
     .card-container {
         height: auto;
@@ -135,10 +159,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         padding: 24px;
-    }
-    .projetos {
-        height: auto;
-        gap: 0px;
     }
     .contato {
         width: 80%;
@@ -169,7 +189,17 @@
     .menu-3-barras {
         display: inline-block;
     }
-    .footer {
-        font-size: 10px;
+    footer {
+        font-size: 0.5rem;
+    }
+    .voltar {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        transition: all .5s;
+        z-index: 5;
     }
 }
